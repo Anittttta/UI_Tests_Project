@@ -1,0 +1,117 @@
+Test case # 1: Verify element "Broken Links and Images"
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Scroll to element "Broken Links-Images"
+4. Click Button "Broken Links-Images"
+ER # 1: verify that webpage with url "https://demoqa.com/broken" is opened
+ER # 2: verify that valid image is present
+ER # 3: verify that broken image is present
+4. Click link "Click Here for Valid Link"
+ER: Verify that webpage with url "https://demoqa.com/" is opened
+5. Click Browser Back button
+ER: verify that webpage with url "https://demoqa.com/broken"
+6. Click link "Click Here for Broken Link"
+ER: verify that webpage with url "http://the-internet.herokuapp.com/status_codes/500" is opened
+7. Click Browser Back button
+ER: verify that webpage with url "https://demoqa.com/broken" is opened
+
+Test case # 2: Verify element "Buttons"
+~ double click
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Click button "Buttons"
+ER: verify that webpage with url "https://demoqa.com/buttons" is opened
+4. Double-click on button "Double Click Me"
+ER: text "You have done a double click" is appeared
+
+~ right-click
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Click button "Buttons"
+ER: verify that webpage with url "https://demoqa.com/buttons" is opened
+4. Right-click on button "Right-click me"
+ER: text "You have done a right click" is appeared
+
+~ dynamic click
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Click button "Buttons"
+ER: verify that webpage with url "https://demoqa.com/buttons" is opened
+4. Click on button "Click me"
+ER: text "You have done a dynamic click" is appeared
+
+Test case # 3: Verify element "Dynamic Properties"
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Scroll to element "Dynamic Properties"
+4. Click element "Dynamic properties"
+ER: verify that webpage with url "https://demoqa.com/dynamic-properties" is opened
+5. Wait 5 seconds
+ER # 1: verify that button "Will enable after 5 seconds" is present
+ER # 2: verify that button "Visible after 5 seconds" is present
+ER # 3: verify that button "Color change" is present and text of the button is in red color
+
+Test case $ 4: Verify element Links
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Scroll to element Links
+4. Click element Links
+ER: verify that webpage is with url "https://demoqa.com/links" is opened
+5. Click link Home
+ER: new tab is opened with url "https://demoqa.com/"
+6. Close opened tab and click link "HomeWJ5R2"
+ER: new tab is opened with url "https://demoqa.com/"
+7. Close opened tab and click link "Created"
+ER: next text is appeared "Link has responded with staus 201 and status text Created"
+8. Click link "No content"
+ER: next text is appeared "Link has responded with staus 204 and status text No Content"
+9. Click link "Moved"
+ER: next text is appeared "Link has responded with staus 301 and status text Moved Permanently"
+10. Click link "Bad request"
+ER: next text is appeared "Link has responded with staus 400 and status text Bad Request"
+11. Click link "Unauthorized"
+ER: next text is appeared "Link has responded with staus 401 and status text Unauthorized"
+12. Click link Forbidden
+ER: next text is appeared "Link has responded with staus 403 and status text Forbidden"
+13. Click link "Not found"
+ER: next text is appeared "Link has responded with staus 404 and status text Not Found"
+
+Test case # 5: verify element TextBox
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Click on element Text Box
+ER: webpage with url "https://demoqa.com/text-box" is opened
+4. Fill "Full Name" field with "John Smith"
+5. Fill Email field with "test@gmail.com"
+6. Fill "Current Address" with "Kyiv, Ukraine"
+7. Click button "Submit"
+ER: verify that next text is appeared
+Name:John Smith
+Email:test@gmail.com
+Current Address :Kyiv, Ukraine
+
+Test Case # 6: Verify element Web Table
+1. Open website https://demoqa.com/
+2. Click button Elements
+3. Scroll to element Web Table
+4. Click element Web Table
+ER: webpage with url "https://demoqa.com/webtables" is opened
+5. Click Add button
+6. Fill field "First name" with "John"
+7. Fill field "Last Name" with "Smith"
+8. Fill field "Email" with "john.smith@gmail.com"
+9. Fill field "Age" with "42"
+10. Fill field "Salary" with "10000"
+11. Fill field "Department" with "Marketing"
+12. Click Button "Submit"
+13.Fill Search field with "John"
+ER: newly created row is displayed in search results.
+Verify that correct first name, last name, email, salary and department values are displayed
+14. Click Edit button
+15. Change first name to "Alex" and click Submit button
+16. Fill search field with "Alex"
+ER: newly edited row is displayed in search results.
+17. Click Delete button
+18. Fill search field with "Alex"
+19. Fill search field with "Alex"
+ER: "No rows found" text is displayed
